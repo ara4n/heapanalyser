@@ -14,7 +14,7 @@ The goals here are:
 Originally this was a simple wrapper around the `heapsnapshot` npm
 package, albeit using `JSONStream` to load the massive JSON heap files
 without running into node's string size limits (~1GB on 64-bit;
-~250GB on 32-bit).  Unfortunately this still runs out of heap, perhaps
+~250MB on 32-bit).  Unfortunately this still runs out of heap, perhaps
 due to `heapsnapshot` itself not being designed for massive heaps.
 
 So instead there's a perl script called `heap-analyser.pl` which naively
